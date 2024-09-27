@@ -3,3 +3,122 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background-color: #111926;
+  color: #b8bbc0;
+  font-family: monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  font: inherit;
+  border: none;
+}
+
+.qubic-brand {
+  margin-right: 10px;
+}
+
+.filebar {
+  background-color: #0e1420;
+  border-bottom: 1px solid #222836;
+  align-items: center;
+  display: flex;
+  padding: 0 20px;
+}
+
+.navbar {
+  flex: 1;
+  font-weight: bold;
+}
+
+.navbar__nav {
+  display: flex;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown__button {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 7px;
+  padding: 15px;
+}
+
+.dropdown__list {
+  background-color: #222836;
+  border: 1px solid #222836;
+  display: none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown__list > li > button {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 7px;
+  padding: 15px;
+  width: 100%;
+}
+
+.dropdown__list > li > button:hover {
+  background-color: #111926;
+}
+
+.dropdown:hover .dropdown__list{
+  display: block;
+  position: absolute;
+  width: max-content;
+}
+
+.hotkey {
+  color: rgb(95, 95, 95);
+  margin-left: auto;
+}
+
+.user {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+}
+
+.user > div {
+  align-items: center;
+  display: flex;
+  gap: 7px;
+}
+
+.user__username {
+  font-weight: bold;
+}
+
+.user__image {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.user__signout {
+  color: #2a384e;
+}
+
+.user__signout:hover {
+  color: #3d506d;
+}
