@@ -9,50 +9,56 @@
   <title>Qubic | Tilemap Editor</title>
 </head>
 <body>
-  <header class="filebar">
-    <div class="qubic-brand">
-      <a href="#">
-        <img src="images/qubic.png" alt="Qubic logo">
-      </a>
-    </div>
-    <nav class="navbar">
-      <ul class="navbar__nav">
-        <li class="navbar__nav-item">
-          <div class="dropdown">
-            <button class="dropdown__button"><i class="fa-solid fa-folder"></i> File</button>
-            <ul class="dropdown__list">
-              <li><button><i class="fa-solid fa-file"></i> New Map <span class="hotkey">[Ctrl+N]</span></button></li>
-              <li><button><i class="fa-solid fa-floppy-disk"></i> Save <span class="hotkey">[Ctrl+S]</span></button></li>
-              <li><button><i class="fa-solid fa-file-import"></i> Import <span class="hotkey">[Ctrl+I]</span></button></li>
-              <li><button><i class="fa-solid fa-file-export"></i> Export <span class="hotkey">[Ctrl+E]</span></button></li>
-            </ul>
-          </div>
-        </li>
-        <li class="navbar__nav-item">
-          <div class="dropdown">
-            <button class="dropdown__button"><i class="fa-solid fa-eye"></i> View</button>
-            <ul class="dropdown__list">
-              <li><button><i class="fa-solid fa-gear"></i> Preferences <span class="hotkey">[Ctrl+P]</span></button></li>
-            </ul>
-          </div>
-        </li>
-        <li class="navbar__nav-item">
-          <div class="dropdown">
-            <button class="dropdown__button"><i class="fa-solid fa-circle-info"></i> Help</button>
-            <ul class="dropdown__list">
-              <li><button><i class="fa-solid fa-book"></i> Documentation <span class="hotkey">[Ctrl+D]</span></button></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <div class="user">
-      <div>
-        <img src="images/dummy-user.png" alt="" class="user__image">
-        <p class="user__username">superuser</p>
+  <div class="container">
+    <header class="filebar">
+      <div class="qubic-brand">
+        <a href="#">
+          <img src="images/qubic.png" alt="Qubic logo">
+        </a>
       </div>
-      <a href="#" class="user__signout"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
-    </div>
-  </header>
+      <nav class="navbar">
+        <ul class="navbar__nav">
+          <li class="navbar__nav-item">
+            <div class="dropdown">
+              <button class="dropdown__button"><i class="fa-solid fa-folder"></i> File</button>
+              <ul class="dropdown__list">
+                <li><button><i class="fa-solid fa-file"></i> New Map <span class="hotkey">[Ctrl+N]</span></button></li>
+                <li><button><i class="fa-solid fa-floppy-disk"></i> Save <span class="hotkey">[Ctrl+S]</span></button></li>
+                <li><button><i class="fa-solid fa-file-import"></i> Import <span class="hotkey">[Ctrl+I]</span></button></li>
+                <li><button><i class="fa-solid fa-file-export"></i> Export <span class="hotkey">[Ctrl+E]</span></button></li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar__nav-item">
+            <div class="dropdown">
+              <button class="dropdown__button"><i class="fa-solid fa-eye"></i> View</button>
+              <ul class="dropdown__list">
+                <li><button><i class="fa-solid fa-gear"></i> Preferences <span class="hotkey">[Ctrl+P]</span></button></li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar__nav-item">
+            <div class="dropdown">
+              <button class="dropdown__button"><i class="fa-solid fa-circle-info"></i> Help</button>
+              <ul class="dropdown__list">
+                <li><button><i class="fa-solid fa-book"></i> Documentation <span class="hotkey">[Ctrl+D]</span></button></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="user">
+        <div>
+          <img src="images/dummy-user.png" alt="" class="user__image">
+          <p class="user__username">superuser</p>
+        </div>
+        <a href="#" class="user__signout"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+      </div>
+    </header>
+    <main class="workspace">
+      <div class="sidebar">side</div>
+      <div class="editor">editor</div>
+    </main>
+  </div>
 </body>
 </html>

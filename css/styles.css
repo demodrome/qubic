@@ -10,6 +10,36 @@ body {
   font-family: monospace;
 }
 
+/* Layout */
+
+html, body, .container {
+  height: 100%;
+}
+
+.container, .workspace {
+  display: flex;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.workspace {
+  flex: 1;
+}
+
+.sidebar {
+  flex: 0 0 20%;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.editor {
+  flex: 1 1 80%;
+}
+
+/* Resets */
+
 a {
   text-decoration: none;
 }
@@ -43,7 +73,6 @@ button {
 
 .navbar {
   flex: 1;
-  font-weight: bold;
 }
 
 .navbar__nav {
@@ -121,4 +150,11 @@ button {
 
 .user__signout:hover {
   color: #3d506d;
+}
+
+/* Workspace */
+/* Sidebar */
+
+.sidebar {
+  border-right: 1px solid #222836;
 }
