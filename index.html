@@ -56,7 +56,23 @@
       </div>
     </header>
     <main class="workspace">
-      <div class="sidebar">side</div>
+      <div class="sidebar">
+        <div class="menu" data-menu>
+          <div class="menu__head">
+            <h2 class="menu__title">Menu</h2>
+            <i class="collapse-icon fa-solid fa-chevron-up"></i>
+          </div>
+          <div class="menu__body">
+            <div class="menu__controls">
+              <div class="filter">
+                <input type="text" class="filter__input">
+                <button class="filter__submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </div>
+            <div class="menu__content"></div>
+          </div>
+        </div>
+      </div>
       <div class="editor">editor</div>
     </main>
   </div>
