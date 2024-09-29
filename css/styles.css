@@ -207,6 +207,10 @@ button {
   width: 100%;
 }
 
+.filter__input:focus {
+  box-shadow: inset 2px 2px 2px 1px rgba(0,0,0,0.18);
+}
+
 .filter__submit {
   border-left: none;
   border-top-right-radius: 20px;

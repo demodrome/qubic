@@ -1,3 +1,6 @@
+/**
+ * Attach event handlers to menu components in the DOM
+ */
 const menu = (function() {
   const menus = document.querySelectorAll('[data-menu]');
   
