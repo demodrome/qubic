@@ -25,7 +25,7 @@ const tooltips = (function() {
           x = event.clientX - 10 - tooltip.offsetWidth;
         }
 
-        if (y <= window.innerHeight) {
+        if (y < 0) {
           y = 0;
         }
 
